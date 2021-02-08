@@ -65,6 +65,7 @@ button {
 } */
 
 button:active {
-	transform: translateY(20px);
-	transform: rotateZ(10deg);
+	/* transform: translateY(20px);
+	transform: rotateZ(10deg); */
+	transform: scale(1.2);
 }
