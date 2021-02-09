@@ -1,4 +1,4 @@
-image_array = [
+const image_array = [
 	"ellie_1.jpg",
 	"ellie_2.jpg",
 	"ellie_3.jpg",
@@ -31,16 +31,25 @@ image_array = [
 	"ellie_30.jpg",
 ];
 
-function getRandomImage() {
+const button = document.getElementById("button_container");
+// const container = document.getElementById("container");
+
+// container.innerHTML += `
+// <div id="inner_container">
+// <img src="" alt="" id="image_shower" />
+// </div>
+// <div id="button_container">
+// <button><i class="fas fa-random"></i></button>
+// </div>
+// `;
+
+const getRandomImage = () => {
 	//Get random index
 	randomIndex = Math.floor(Math.random() * image_array.length);
-
 	// Get random image from index
 	selectedImage = image_array[randomIndex];
-
 	document.getElementById("image_shower").src = `../images/${selectedImage}`;
-}
+};
 
-const button = document.getElementById("button_container");
 button.addEventListener("click", getRandomImage);
 getRandomImage();
