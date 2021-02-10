@@ -11,7 +11,7 @@ body {
 	height: 100%;
 	border-radius: 5px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	flex-flow: column nowrap;
 }
@@ -19,7 +19,7 @@ body {
 #inner_container {
 	max-width: 100%;
 	min-width: 60%;
-	height: auto;
+	height: 80%;
 	overflow: hidden;
 	float: left;
 	margin-bottom: 20px;
@@ -46,7 +46,6 @@ img {
 @media screen and (min-width: 800px) {
 	img {
 		height: 100%;
-		/* max-width: 100%; */
 		width: auto;
 	}
 }
@@ -61,6 +60,7 @@ img {
 
 button {
 	width: 25%;
+	max-width: 200px;
 	height: 90%;
 
 	font-size: 20px;
@@ -68,7 +68,6 @@ button {
 	border: none;
 	outline: none;
 	cursor: pointer;
-
 	border-radius: 5px;
 	background-color: #ef233c;
 }
