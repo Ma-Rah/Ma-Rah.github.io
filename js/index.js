@@ -92,6 +92,7 @@ const image_array = [
 ];
 
 const button = document.getElementById("button_container");
+const image = document.getElementById("image_shower");
 
 const getRandomImage = () => {
 	//Get random index
@@ -102,4 +103,5 @@ const getRandomImage = () => {
 };
 
 button.addEventListener("click", getRandomImage);
+image.addEventListener("click", getRandomImage);
 getRandomImage();
