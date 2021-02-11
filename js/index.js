@@ -78,7 +78,6 @@ const image_array = [
 	"79.jpg",
 	"8.jpg",
 	"80.jpg",
-	"81.jpg",
 	"82.jpg",
 	"83.jpg",
 	"84.jpg",
@@ -93,6 +92,7 @@ const image_array = [
 
 const button = document.getElementById("button_container");
 const image = document.getElementById("image_shower");
+const heading = document.getElementById("heading");
 
 const getRandomImage = () => {
 	//Get random index
@@ -100,8 +100,10 @@ const getRandomImage = () => {
 	// Get random image from index
 	selectedImage = image_array[randomIndex];
 	document.getElementById("image_shower").src = `../images/${selectedImage}`;
+	heading.classList.add("hidden");
 };
 
 button.addEventListener("click", getRandomImage);
 image.addEventListener("click", getRandomImage);
 getRandomImage();
+heading.classList.remove("hidden");
